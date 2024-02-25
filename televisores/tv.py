@@ -10,7 +10,7 @@ class TV:
 
     @classmethod
     def cambiarNumTV(cls):
-        TV.numTV += 1
+        cls.numTV += 1
         return TV.numTV
     def getMarca(self):
         return self._marca
@@ -37,7 +37,7 @@ class TV:
     def getNumTV(cls):
         return TV.numTV
     def setNumTV(cls, numTV):
-        TV.numTV = numTV
+        cls.numTV = numTV
     def getEstado(self):
         return self._estado
     def turnOn(self):
